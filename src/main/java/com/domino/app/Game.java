@@ -110,10 +110,14 @@ public class Game {
         int domino = input.nextInt();
         input.nextLine();
         domino--;
-        String piece = "" + player.getDomino(domino);
-        System.out.println("En qué lado de la tabla le gustaría posicionarla? Escriba 'izquierda' o 'derecha':");
-        String side = input.nextLine();
-        table.placePiece(side, piece, player, domino);
+        try {
+            String piece = "" + player.getDomino(domino);
+            System.out.println("En qué lado de la tabla le gustaría posicionarla? Escriba 'izquierda' o 'derecha':");
+            String side = input.nextLine();
+            table.placePiece(side, piece, player, domino);
+        } catch(Exception e){
+            System.out.println("Elección inválida, el turno es concedido al siguiente jugador.");
+        }
     }
 
     private static String winner(Player player1, Player player2, String nombreJ1, String nombreJ2){
