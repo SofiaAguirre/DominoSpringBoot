@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbfbd401-cd43-4c60-bd65-0f5281150a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programacion/wabi-connector-vietnam" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java/Accenture" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605186859099</updated>
       <workItem from="1605186863256" duration="6985000" />
-      <workItem from="1607018477165" duration="250000" />
+      <workItem from="1607018477165" duration="3324000" />
     </task>
     <servers />
   </component>

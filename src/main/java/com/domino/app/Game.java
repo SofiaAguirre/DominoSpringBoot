@@ -20,6 +20,8 @@ public class Game {
 
     public void play() {
 
+        //Jugador 1 pasa a ser (con su nombre) ese jugador
+
         Scanner input = new Scanner(System.in);
         Domino domino = new Domino();
         RandomNumber random = new RandomNumber(dominoPieces);
@@ -31,42 +33,87 @@ public class Game {
         int turn = 1;
         System.out.println();
         String inicioPartida = String.valueOf(LocalDateTime.now());
+
+        //Jugador1 ingresa su nombre
+        //Jugador2 ingresa su nombre
+
         System.out.println("Jugador1 ingrese su nombre:");
         String nombreJ1 = input.nextLine();
-        System.out.println(nombreJ1 + ": Elija una pieza para comenzar el juego:");
+        System.out.println("Jugador2 ingrese su nombre:");
+        String nombreJ2 = input.nextLine();
+
+        // se comprueba quien tiene el par de dobles mas grande
         System.out.println(player1.printHand());
+        System.out.println(player2.printHand());
+
+        int player1MayorDoble = player1.dobleMasGrande();
+        int player2MayorDoble = player2.dobleMasGrande();
+
+        String player1Name = "";
+        String player2Name = "";
+
+        Player p1 = null;
+        Player p2 = null;
+
+        if(player2MayorDoble > player1MayorDoble){
+            player1Name = nombreJ2;
+            p1 = player2;
+            player2Name = nombreJ1;
+            p2 = player1;
+        } else if(player1MayorDoble > player2MayorDoble){
+            player1Name = nombreJ1;
+            p1 = player1;
+            player2Name = nombreJ2;
+            p2 = player2;
+        } else {
+            //if(player1MayorDoble == player2MayorDoble)
+            int player1FichaMasAlta = player1.fichaMasAlta();
+            int player2FichaMasAlta = player2.fichaMasAlta();
+            if(player2FichaMasAlta > player1FichaMasAlta){
+                player1Name = nombreJ2;
+                p1 = player2;
+                player2Name = nombreJ1;
+                p2 = player1;
+            } else if (player1FichaMasAlta > player2FichaMasAlta){
+                player1Name = nombreJ1;
+                p1 = player1;
+                player2Name = nombreJ2;
+                p2 = player2;
+            }
+        }
+
+        System.out.println(player1Name + ": Elija una pieza para comenzar el juego:");
+        System.out.println(p1.printHand());
         int start = input.nextInt();
         input.nextLine();
         start--;
-        String firstPiece = player1.getDomino(start);
-        player1.removeDomino(start);
+        String firstPiece = p1.getDomino(start);
+        p1.removeDomino(start);
         table.placeFirst(firstPiece);
         turn++;
-        System.out.println("Jugador2 ingrese su nombre:");
-        String nombreJ2 = input.nextLine();
         //booleanos, demuestra si los jugadores tienen fichas para jugar
         boolean playerOnePieces = true;
         boolean playerTwoPieces = true;
 
         while(canPlay && playerOnePieces && playerTwoPieces){
 
-            if(player1.getDominoCount() <= 0){
+            if(p1.getDominoCount() <= 0){
                 playerOnePieces = false;
             }
-            else if(player2.getDominoCount() <= 0){
+            else if(p2.getDominoCount() <= 0){
                 playerTwoPieces = false;
             }
             if(turn % 2 == 1){
                 //Jugador1
-                turn = playTurn(input, player1, table, turn, nombreJ1);
+                turn = playTurn(input, p1, table, turn, player1Name);
             } else if(turn % 2 == 0){
                 //Jugador2
-                turn = playTurn(input, player2, table, turn, nombreJ2);
+                turn = playTurn(input, p2, table, turn, player2Name);
             }
         }
         String finPartida = String.valueOf(LocalDateTime.now());
-        String winner = winner(player1, player2, nombreJ1, nombreJ2);
-        Partida partida = new Partida(nombreJ1, nombreJ2, inicioPartida, finPartida, winner);
+        String winner = winner(p1, p2, player1Name, player2Name);
+        Partida partida = new Partida(player1Name, player2Name, inicioPartida, finPartida, winner);
         partidasDAO.savePartida(partida);
     }
 
