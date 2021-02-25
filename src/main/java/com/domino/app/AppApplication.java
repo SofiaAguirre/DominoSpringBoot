@@ -7,20 +7,29 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.concurrent.TimeUnit;
 
-@SpringBootApplication
-public class AppApplication implements CommandLineRunner {
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
-    @Autowired
+@SpringBootApplication
+public class AppApplication extends JFrame implements CommandLineRunner {
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Autowired
     private Game game;
 
     public static void main(String[] args) {
         SpringApplication.run(AppApplication.class, args);
+       
     }
 
     @Override
     public void run(String... args) throws Exception {
         TimeUnit.SECONDS.sleep(3);
         game.play();
+       
     }
 
 }

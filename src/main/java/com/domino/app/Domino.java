@@ -10,7 +10,7 @@ public class Domino {
         createSet();
     }
 
-    public ArrayList createSet(){
+    public ArrayList<String> createSet(){
         int[][] createSet = new int[7][];
         for(int i = 0; i < createSet.length; i++){
             int[] pieces = new int[i+1];

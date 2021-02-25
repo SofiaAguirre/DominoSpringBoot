@@ -1,5 +1,7 @@
 package com.domino.app;
 
+import javax.swing.JOptionPane;
+
 public class Table {
     private static String openLeft = "";
     private static String openRight = "";
@@ -37,6 +39,7 @@ public class Table {
             }
             else{
                 System.out.println("Pieza invalida, el turno es concedido al siguiente jugador.");
+                JOptionPane.showInternalMessageDialog(null,"Ficha invalida, el turno es concedido al siguiente jugador","DOMINO", JOptionPane.INFORMATION_MESSAGE);	
             }
         }
         else if(side.toLowerCase().equals("derecha")){
@@ -57,6 +60,7 @@ public class Table {
             }
             else{
                 System.out.println("Pieza invalida, el turno es concedido al siguiente jugador.");
+                JOptionPane.showInternalMessageDialog(null,"Ficha invalida, el turno es concedido al siguiente jugador","DOMINO", JOptionPane.INFORMATION_MESSAGE);
             }
         }
 
@@ -72,7 +76,7 @@ public class Table {
 
     public static String openEnds(){
         String open = "";
-        open += "Numero disponible izquierda: " + getLeft() + "\nNumero disponible derecha " + getRight();
+        open += "NUMERO DISPONIBLE IZQUIERDA: " + getLeft()+"  "+ "\nNUMERO DISPONIBLE DERECHA: " + getRight();
         return open;
     }
 
