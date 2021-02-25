@@ -4,7 +4,13 @@
     <list default="true" id="fbfbd401-cd43-4c60-bd65-0f5281150a05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/MXWIN.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/MXWIN.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/dom1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/dom1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/dom2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/dom2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/m2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/m2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/mx1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/mx1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/update.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/update.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/Game.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +39,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../java/Accenture" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.domino.app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eugenia\Desktop\Programacion\DominoSpringBoot\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -67,6 +84,7 @@
       <updated>1605186859099</updated>
       <workItem from="1605186863256" duration="6985000" />
       <workItem from="1607018477165" duration="3324000" />
+      <workItem from="1614217377194" duration="252000" />
     </task>
     <servers />
   </component>
@@ -78,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -14,11 +14,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Service;
 
 import com.domino.app.dao.PartidasDAO;
@@ -121,36 +119,35 @@ public class Game extends JFrame implements ActionListener{
 		boton.setBounds(300,500,200,30);
 		boton.setFont(fuenteDos);
 		add(boton);
-		
-		etiquetaP1.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/mx1.jpg"));
+		etiquetaP1.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/mx1.jpg")).getImage())));
 		etiquetaP1.setBounds(70,80,80,80);
 		etiquetaP1.setVisible(false);
 		add(etiquetaP1);
-        
-		etiquetaP2.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/m2.jpg"));
+
+		etiquetaP2.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/m2.jpg")).getImage())));
 		etiquetaP2.setBounds(650,80,80,80);
 		etiquetaP2.setVisible(false);
 		add(etiquetaP2);
-		
+
 		JLabel etiquetaTitulo = new JLabel();
-	    etiquetaTitulo.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/update.gif"));
+	    etiquetaTitulo.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/update.gif")).getImage())));
 	    etiquetaTitulo.setBounds(150,10,500,65);
 	    etiquetaTitulo.setHorizontalAlignment(JLabel.CENTER);
 	    add(etiquetaTitulo);
-	    
-	    etiquetaWin.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/MXWIN.gif"));
+
+	    etiquetaWin.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/MXWIN.gif")).getImage())));
         etiquetaWin.setBounds(300,300,200,200);
         etiquetaWin.setVisible(false);
         etiquetaWin.setHorizontalAlignment(JLabel.CENTER);
         add(etiquetaWin); 
-	        
+
         JLabel etiquetaDomAnim2 = new JLabel ();
-        etiquetaDomAnim2.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/dom2.gif"));
+        etiquetaDomAnim2.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/dom2.gif")).getImage())));
         etiquetaDomAnim2.setBounds(0,250,400,300);
         add(etiquetaDomAnim2);
-        
+
         JLabel etiquetaDomAnim = new JLabel ();
-        etiquetaDomAnim.setIcon(new ImageIcon("C:/Users/Usuario/Desktop/DominoSpringBoot-master/src/main/java/imagenes/dom1.gif"));
+        etiquetaDomAnim.setIcon(new ImageIcon((new ImageIcon(this.getClass().getResource("/imagenes/dom1.gif")).getImage())));
         etiquetaDomAnim.setBounds(450,250,400,300);
         add(etiquetaDomAnim); 
         
