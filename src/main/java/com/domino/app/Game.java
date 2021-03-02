@@ -318,7 +318,7 @@ public class Game extends JFrame implements ActionListener{
         if(dominoPieces > 0){
             player.giveDomino();
             System.out.println("Se ha agarrado una pieza aleatoria de las restantes.");
-            JOptionPane.showInternalMessageDialog(null,"Se ha agarrado una pieza aleatoria de las restantes","DOMINO", JOptionPane.INFORMATION_MESSAGE);	
+            JOptionPane.showInputDialog(null,"Se ha agarrado una pieza aleatoria de las restantes","DOMINO", JOptionPane.INFORMATION_MESSAGE);
           
         }
         else{

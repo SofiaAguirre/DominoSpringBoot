@@ -27,9 +27,7 @@ public class AppApplication extends JFrame implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        TimeUnit.SECONDS.sleep(3);
         game.play();
-       
     }
 
 }

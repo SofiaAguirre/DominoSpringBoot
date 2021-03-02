@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fbfbd401-cd43-4c60-bd65-0f5281150a05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/AppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/MXWIN.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/MXWIN.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/dom1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/dom1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/dom2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/dom2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/m2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/m2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/mx1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/mx1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/imagenes/update.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domino/app/imagenes/update.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/AppApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/Domino.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/Domino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domino/app/VentanaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/domino/app/VentanaPrincipal.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
